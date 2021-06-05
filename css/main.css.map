@@ -4,7 +4,8 @@
     "sources": [
         "../src/sass/main.scss",
         "../src/sass/layout/_gallery.scss",
-        "../src/sass/layout/_customer-reviews.scss"
+        "../src/sass/layout/_customer-reviews.scss",
+        "../src/sass/layout/_about.scss"
     ],
     "names": [],
     "file": "main.css"
