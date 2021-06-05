@@ -11,7 +11,8 @@
         "../src/sass/components/menu.scss",
         "../src/sass/layout/_hero.scss",
         "../src/sass/layout/_gallery.scss",
-        "../src/sass/layout/_customer-reviews.scss"
+        "../src/sass/layout/_customer-reviews.scss",
+        "../src/sass/layout/_advantages.scss"
     ],
     "names": [],
     "file": "main.css"
