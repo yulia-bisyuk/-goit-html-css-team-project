@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": ";AAAA;;;GAGG",
-    "sources": [
-        "../src/sass/main.scss",
-        "../src/sass/layout/_gallery.scss",
-        "../src/sass/layout/_customer-reviews.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":["../src/sass/main.scss","../src/src/sass/main.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;;EAAA","file":"main.css"}
