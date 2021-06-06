@@ -3,7 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap");
 :root {
   --main-font:"DM Sans", sans-serif;
   --title-font: "Titan One", sans-serif;
