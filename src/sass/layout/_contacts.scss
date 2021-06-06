@@ -1,0 +1,98 @@
+.contacts__list-item-contacts-link {
+  color: black;
+}
+
+.section.contacts {
+  padding-bottom: 113px;
+  background-color: var(--section-bg);
+}
+
+.container.contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts__list {
+  margin-bottom: 54px;
+}
+
+.contacts__list-item {
+  width: 100%;
+  padding: 43px 20px;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__list-item-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  padding: 3px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 25px;
+
+  color: var(--white-color);
+  background-color: var(--ice-coffee-color);
+}
+
+.contacts__list-item-label--truck {
+  background-color: var(--milkshakes-color);
+}
+
+.contacts__button {
+  width: 161px;
+  height: 44px;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.contacts__button--locations {
+  padding: 12px 20px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+  }
+}
+
+.contacts__button--franchise {
+  padding: 12px 32px;
+  color: var(--accent-color);
+  background-color: var(--white-color);
+
+  border: 1px solid red;
+
+  &:hover,
+  &:focus {
+    background-color: var(--buton-second-accent-color);
+  }
+}
