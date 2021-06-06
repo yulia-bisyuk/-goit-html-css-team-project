@@ -10,7 +10,7 @@
     padding-bottom: 0;
     background-color: var(--mobile-menu-bg);
     animation:  slide 100ms linear;
-    
+  
     @media screen and (min-width:768px) and (max-width:1279px){
         width: 254px;
         }
@@ -22,7 +22,6 @@
                 padding: 0;
     }
 }
-
 
 .menu_wrapper.is-open{
     
@@ -176,6 +175,7 @@ background-color: var(--buton-second-accent-color);
     .menu__list::before,.menu__item::after{
         content: none;
     }
+
 }
 .menu__link--curent{
     color: var(--accent-color);
