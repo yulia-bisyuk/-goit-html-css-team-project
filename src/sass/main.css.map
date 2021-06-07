@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG",
+    "sources": [
+        "main.scss",
+        "layout/_gallery.scss",
+        "layout/_customer-reviews.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
