@@ -40,10 +40,10 @@
     top: 28px;
     left: 61px;
     z-index: 10;
-    background-image: url('../images/slider/brackets@1x.png');
+    background-image: url('./images/slider/brackets@1x.png');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/slider/brackets@2x.png');
+      background-image: url('./images/slider/brackets@2x.png');
     }
   }
 }
