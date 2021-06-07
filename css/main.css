@@ -140,8 +140,6 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
   }
 }
 
@@ -149,8 +147,6 @@ ul {
   .container {
     width: 1280px;
     max-width: 1600px;
-    padding-left: 116px;
-    padding-right: 116px;
   }
 }
 
@@ -776,5 +772,58 @@ ul {
 .gallery {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--section-bg)), color-stop(40%, var(--white-color)), color-stop(60%, var(--white-color)));
   background-image: linear-gradient(to bottom, var(--section-bg) 40%, var(--white-color) 40%, var(--white-color) 60%);
+}
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 170px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 121px;
+    padding-bottom: 197px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 123px;
+    padding-bottom: 234px;
+  }
+}
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.reviews__img {
+  margin-bottom: 30px;
+}
+
+.reviews__content {
+  position: relative;
+  background-color: var(--slider-color);
+  padding: 43px 60px 26px 60px;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  z-index: 10;
+  background-image: repeating-linear-gradient(to bottom, var(--slider-color), var(--slider-color) 31px, var(--separate-line-color) 31px, var(--separate-line-color) 32px);
 }
 /*# sourceMappingURL=main.css.map */
