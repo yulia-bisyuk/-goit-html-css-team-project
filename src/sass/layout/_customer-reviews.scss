@@ -23,32 +23,38 @@
 
 .reviews__img {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reviews__content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--slider-color);
   padding: 43px 60px 26px 60px;
   margin-bottom: 30px;
   max-width: 926px;
   z-index: 0;
 
-  // &::before {
-  //   content: '';
-  //   width: 54px;
-  //   height: 40px;
-  //   position: absolute;
-  //   top: 28px;
-  //   left: 61px;
-  //   z-index: 10;
-  //   background-image: url('../../images/slider/brackets@1x.png');
+  &::before {
+    content: '';
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    z-index: 10;
+    // background-image: url('../images/slider/brackets@1x.png');
 
-  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //     background-image: url('../../images/slider/brackets@2x.png');
-  //   }
-  // }
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url('../images/slider/brackets@2x.png');
+    // }
+  }
 }
 
 .reviews__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
@@ -56,8 +62,8 @@
   z-index: 20;
   background-image: repeating-linear-gradient(
     to bottom,
-    var(--slider-color),
-    var(--slider-color) 30px,
+    transparent,
+    transparent 30px,
     var(--separate-line-color) 30px,
     var(--separate-line-color) 31px
   );

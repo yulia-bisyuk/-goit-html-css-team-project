@@ -4,28 +4,29 @@
  * Все паршалы подключаются сюда.
  */
 :root {
-  --main-font:"DM Sans", sans-serif;
-  --title-font: "Titan One", sans-serif;
-  --hero-header-bg:#FFB8CA;
-  --mobile-menu-bg: #E17992;
-  --section-bg:#FFF5F6;
-  --slider-color:#FAFAFA;
-  --home-icon-color: #D31342;
-  --red-dots-color:#C7133E;
-  --grey-dots-color:#D9D9D9;
-  --accent-color:#D41443;
-  --button-accent-color: #C7133E;
-  --buton-second-accent-color:#ECEBEB;
-  --label-color:#FFA5BA;
-  --ice-cream-color:#FFB8CA;
-  --ice-coffee-color:#F0D1A5;
-  --milkshakes-color:#C2E297;
-  --white-color: #FFFFFF;
-  --black-color:#000000;
-  --light-brown-color:#907E82;
-  --separate-line-color: #E1E1E1;
+  --main-font: 'DM Sans', sans-serif;
+  --title-font: 'Titan One', sans-serif;
+  --hero-header-bg: #ffb8ca;
+  --mobile-menu-bg: #e17992;
+  --menu-border: #e18298;
+  --section-bg: #fff5f6;
+  --slider-color: #fafafa;
+  --home-icon-color: #d31342;
+  --red-dots-color: #c7133e;
+  --grey-dots-color: #d9d9d9;
+  --accent-color: #d41443;
+  --button-accent-color: #c7133e;
+  --buton-second-accent-color: #ecebeb;
+  --label-color: #ffa5ba;
+  --ice-cream-color: #ffb8ca;
+  --ice-coffee-color: #f0d1a5;
+  --milkshakes-color: #c2e297;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-brown-color: #907e82;
+  --separate-line-color: #e1e1e1;
   --shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -318,7 +319,7 @@ ul {
   font-weight: bold;
   line-height: 1.31;
   color: var(--accent-color);
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
   -webkit-transition: background-color 250ms var(--timing-function);
@@ -351,21 +352,22 @@ ul {
 }
 
 .menu__list::before {
-  content: "";
+  content: '';
   display: block;
-  border: 1px solid #E18298;
+  border: 1px solid var(--menu-border);
   margin-bottom: 11px;
 }
 
 .menu__item::after {
-  content: "";
+  content: '';
   display: block;
-  border: 1px solid #E18298;
+  border: 1px solid var(--menu-border);
   margin-top: 11px;
 }
 
 @media screen and (min-width: 1280px) {
-  .menu__list::before, .menu__item::after {
+  .menu__list::before,
+  .menu__item::after {
     content: none;
   }
 }
@@ -935,9 +937,14 @@ ul {
 
 .reviews__img {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reviews__content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--slider-color);
   padding: 43px 60px 26px 60px;
   margin-bottom: 30px;
@@ -945,13 +952,24 @@ ul {
   z-index: 0;
 }
 
+.reviews__content::before {
+  content: '';
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  z-index: 10;
+}
+
 .reviews__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   z-index: 20;
-  background-image: repeating-linear-gradient(to bottom, var(--slider-color), var(--slider-color) 30px, var(--separate-line-color) 30px, var(--separate-line-color) 31px);
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 30px, var(--separate-line-color) 30px, var(--separate-line-color) 31px);
 }
 
 .footer {
