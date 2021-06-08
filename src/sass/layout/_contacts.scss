@@ -1,7 +1,5 @@
 .contacts {
-  outline: 1px solid red;
   padding-bottom: 113px;
-  //
   background-image: linear-gradient(var(--white-color) 84px, var(--section-bg) 84px);
 
   @media screen and (min-width: 768px) {
@@ -10,16 +8,17 @@
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 165px;
-    // background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px)
-    background-image: url('../../images/contacts/desktop/img-bg.png');
+
+    background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px),
+      url('../images/contacts/desktop/img-bg.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../../images/contacts/desktop/img-bg@2x.png');
+      background-image: url('../images/contacts/desktop/img-bg@2x.png'),
+        linear-gradient(var(--white-color) 102px, var(--section-bg) 102px);
+      // backrgound-position: y -50%;
     }
-
-    // height: 50%;
   }
 }
 
@@ -259,8 +258,6 @@
   padding: 12px 32px;
   color: var(--accent-color);
   background-color: var(--white-color);
-
-  border: 1px solid red;
 
   &:hover,
   &:focus {
