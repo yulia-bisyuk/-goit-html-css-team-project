@@ -2,7 +2,7 @@
   padding-top: 126px;
   background-color: var(--section-bg);
   @media screen and (max-width: 767px) {
-    background-image: url(../images/about/about-background-image-mobile.png);
+    background-image: url(/images/about/about-background-image-mobile.png);
     background-position: center bottom 60px;
     background-repeat: no-repeat;
     background-size: 100% 133px;
@@ -11,11 +11,11 @@
   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
     (min-resolution: 192dpi) and (max-width: 767px),
     (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url(../images/about/about-background-image-mobile@2x.png);
+    background-image: url(/images/about/about-background-image-mobile@2x.png);
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/about/about-background-image-desktop.png);
+    background-image: url(/images/about/about-background-image-desktop.png);
 
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) and (min-width: 1280px),
     (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: url(../images/about/about-background-image-desktop@2x.png);
+    background-image: url(/images/about/about-background-image-desktop@2x.png);
   }
 }
 
