@@ -134,19 +134,19 @@ ul {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    width: 280px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
-    width: 768px;
+    width: 700px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    width: 1050px;
     max-width: 1600px;
   }
 }
@@ -1029,13 +1029,13 @@ ul {
 @media screen and (min-width: 1280px) {
   .contacts {
     padding-bottom: 165px;
-    background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px), url("../images/contacts/desktop/img-bg.png");
+    background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px), url("/images/contacts/desktop/img-bg.png");
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url("../images/contacts/desktop/img-bg@2x.png"), linear-gradient(var(--white-color) 102px, var(--section-bg) 102px);
+    background-image: url("/images/contacts/desktop/img-bg@2x.png"), linear-gradient(var(--white-color) 102px, var(--section-bg) 102px);
     backrgound-position: y -50%;
   }
 }
