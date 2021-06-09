@@ -101,13 +101,12 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider {
+/* .slick-dotted.slick-slider {
   margin-bottom: 30px;
-}
+} */
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
 
   display: block;
 
@@ -126,7 +125,6 @@
 
   width: 20px;
   height: 20px;
-  margin: 0 2px;
   padding: 0;
 
   cursor: pointer;
@@ -139,7 +137,6 @@
 
   width: 20px;
   height: 20px;
-  padding: 5px;
 
   cursor: pointer;
 
@@ -148,6 +145,11 @@
   outline: none;
   background: transparent;
 }
+
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
 .slick-dots li button:hover,
 .slick-dots li button:focus {
   outline: none;

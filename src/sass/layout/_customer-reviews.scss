@@ -29,10 +29,12 @@
 
 .reviews__content {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   background-color: var(--slider-color);
-  padding: 43px 60px 26px 57px;
+  padding: 43px 60px 26px 60px;
   margin-bottom: 52px;
   padding-left: auto;
   padding-right: auto;
@@ -55,9 +57,13 @@
     z-index: 10;
     background-image: url('/images/slider/brackets@1x.png');
 
-    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //   background-image: url('/images/slider/brackets@2x.png');
-    // }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/slider/brackets@2x.png');
+      background-size: 54px 40px;
+    }
   }
 }
 
@@ -67,9 +73,9 @@
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
-  display: block;
-  margin: 0;
-  max-width: 157px;
+
+  // max-width: 157px;
+  // min-height: 248px;
   z-index: 20;
   background-image: repeating-linear-gradient(
     to bottom,
@@ -78,11 +84,17 @@
     var(--separate-line-color) 30px,
     var(--separate-line-color) 31px
   );
+  background-repeat: no-repeat;
 
-  @media screen and (min-width: 768px) {
-    max-width: 460px;
-    min-height: 83px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 460px;
+  //   min-height: 83px;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   max-width: 460px;
+  //   min-height: 83px;
+  // }
 }
 
 .reviews__name {
