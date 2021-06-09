@@ -1,3 +1,17 @@
+.products {
+  padding-bottom: 98px;
+  padding-top: 122px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 119px;
+    padding-top: 127px;
+  }
+}
+
 .products__item--first {
   background-color: var(--ice-cream-color);
   position: relative;
@@ -225,7 +239,6 @@
   padding: 155px 40px 40px 40px;
 
   width: 280px;
-  height: 485px;
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
@@ -241,7 +254,6 @@
   @media screen and (min-width: 1280px) {
     padding: 165px 45px 50px 45px;
     flex-basis: 329px;
-    height: 525px;
   }
 }
 
@@ -276,6 +288,8 @@
 }
 
 .products__second-title {
+  margin-bottom: 30px;
+
   font-family: var(--title-font);
   font-size: 20px;
   line-height: 1.15;
@@ -284,6 +298,8 @@
   color: var(--white-color);
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+
     font-size: 30px;
     line-height: 1.13;
   }
@@ -303,5 +319,36 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    background-image: url(../images/products/dots/dots-sec-ver.png);
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.products__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 62px;
   }
 }
