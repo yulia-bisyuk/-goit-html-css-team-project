@@ -8,9 +8,6 @@
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 165px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 30%;
 
     background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px),
       url('/images/contacts/desktop/img-bg.png');
@@ -82,10 +79,10 @@
   color: var(--white-color);
   background-color: var(--ice-coffee-color);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 16px;
-  //   letter-spacing: 0.04em;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .contacts__list-item-label--truck {
@@ -107,10 +104,10 @@
 
   color: var(--black-color);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
   }
@@ -131,10 +128,10 @@
 
   color: var(--light-brown-color);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 1.64;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.81;
@@ -160,10 +157,10 @@
 
   color: var(--label-color);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.87;
@@ -175,10 +172,10 @@
   font-size: 12px;
   line-height: 1.5;
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.81;
@@ -190,10 +187,10 @@
   line-height: 1.5;
   color: var(--light-brown-color);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.81;
