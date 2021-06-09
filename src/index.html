@@ -15,6 +15,10 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" /> -->
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
@@ -23,15 +27,25 @@
     <main>
       <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
       <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
+      <include src="./partials/modal.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./burger.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <!-- <script src="./slick/slick.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./slick/slider.js"></script>
   </body>
 </html>
