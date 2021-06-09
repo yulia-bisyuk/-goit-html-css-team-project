@@ -10,12 +10,12 @@
     padding-bottom: 165px;
 
     background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px),
-      url('../images/contacts/desktop/img-bg.png');
+      url('/images/contacts/desktop/img-bg.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/contacts/desktop/img-bg@2x.png'),
+      background-image: url('/images/contacts/desktop/img-bg@2x.png'),
         linear-gradient(var(--white-color) 102px, var(--section-bg) 102px);
       backrgound-position: y -50%;
     }
@@ -261,7 +261,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--buton-second-accent-color);
+    background-color: var(--button-second-accent-color);
   }
   @media screen and (min-width: 768px) {
     width: 174px;
