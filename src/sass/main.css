@@ -264,6 +264,55 @@ ul {
   right: 0;
   z-index: 1000;
   background-color: transparent;
+  display: block;
+  padding: 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.is-open {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: scroll;
+}
+
+.is-open .mobile-menu__icon--open {
+  display: none;
+}
+
+.mobile-menu__icon--close {
+  display: none;
+}
+
+.is-open .mobile-menu__icon--close {
+  display: block;
+}
+
+.mobile-menu__button {
+  top: 23px;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
 }
 
 .mobile-menu__buton.is-open {
@@ -318,7 +367,7 @@ ul {
   font-weight: bold;
   line-height: 1.31;
   color: var(--accent-color);
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
   -webkit-transition: background-color 250ms var(--timing-function);
@@ -351,21 +400,22 @@ ul {
 }
 
 .menu__list::before {
-  content: "";
+  content: '';
   display: block;
-  border: 1px solid #E18298;
+  border: 1px solid #e18298;
   margin-bottom: 11px;
 }
 
 .menu__item::after {
-  content: "";
+  content: '';
   display: block;
-  border: 1px solid #E18298;
+  border: 1px solid #e18298;
   margin-top: 11px;
 }
 
 @media screen and (min-width: 1280px) {
-  .menu__list::before, .menu__item::after {
+  .menu__list::before,
+  .menu__item::after {
     content: none;
   }
 }
@@ -380,6 +430,7 @@ ul {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-bottom: 16px;
   color: var --label-color;
 }
 
@@ -893,7 +944,6 @@ ul {
   padding-top: 7px;
   cursor: pointer;
 }
-
 .products {
   padding-bottom: 98px;
   padding-top: 122px;
