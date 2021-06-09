@@ -7,6 +7,7 @@
         "../src/sass/utils/_variables.scss",
         "../src/sass/base/_common.scss",
         "../src/sass/base/_container.scss",
+        "../src/sass/utils/_mixin.scss",
         "../src/sass/components/_menu.scss",
         "../src/sass/components/_modal.scss",
         "../src/sass/components/_heading-secondary-label.scss",
