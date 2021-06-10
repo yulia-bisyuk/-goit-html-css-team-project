@@ -812,6 +812,16 @@ ul {
   }
 }
 
+.hero__link {
+  text-decoration: none;
+  display: block;
+  color: var(--white-color);
+}
+
+.hero__link--made {
+  color: var(--accent-color);
+}
+
 .hero__buttons--products:hover {
   background-color: var(--button-accent-color);
 }
