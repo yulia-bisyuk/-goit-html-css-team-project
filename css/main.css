@@ -229,15 +229,15 @@ ul {
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-<<<<<<< HEAD
+/* <<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-=======
+======= */
   -ms-flex-direction: column;
   flex-direction: column;
->>>>>>> f7f080afd45eb6e835dd275135ff6151dc45c5d3
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -2171,14 +2171,14 @@ ul {
   background-color: var(--white-color);
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD
 .contacts__button--franchise:hover, .contacts__button--franchise:focus {
   background-color: var(--button-second-accent-color);
-=======
+======= */
 .contacts__button--franchise:hover,
 .contacts__button--franchise:focus {
   background-color: var(--buton-second-accent-color);
->>>>>>> f7f080afd45eb6e835dd275135ff6151dc45c5d3
+
 }
 
 @media screen and (min-width: 768px) {
