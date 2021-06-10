@@ -49,20 +49,20 @@
   background-color: var(--white-color);
   border-radius: 22px;
   transition: background-color 250ms var(--timing-function);
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
 .header__button:hover {
-  background-color: var(--button-second-accent-color);
+  background-color: var(--buton-second-accent-color);
 }
 .mobile-menu__button.is-open + .header__button {
   display: none;
 }
 .header__button-icon {
   margin-left: 16px;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .header__mobile-wrapper {

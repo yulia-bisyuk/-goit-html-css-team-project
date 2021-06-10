@@ -5,19 +5,13 @@
   padding-right: 20px;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 320px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    max-width: 700px;
-    // padding-left: 34px;
-    // padding-right: 34px;
+  @media screen and (min-width: 768px) {
+    width: 740px;
   }
-
   @media screen and (min-width: 1280px) {
-    max-width: 1050px;
+    width: 1090px;
     max-width: 1600px;
-    // padding-left: 116px;
-    // padding-right: 116px;
   }
 }

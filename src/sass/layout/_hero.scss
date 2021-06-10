@@ -11,10 +11,6 @@
   }
 }
 
-.hero__container {
-  position: relative;
-}
-
 .hero__title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -165,11 +161,12 @@
 }
 
 .hero__buttons--made:hover {
-  background-color: var(--button-second-accent-color);
+  background-color: var(--buton-second-accent-color);
 }
 
 .hero__images {
   width: 100%;
+  position: relative;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -182,8 +179,8 @@
 
 .hero__images--circle {
   position: absolute;
-  top: 83px;
-  left: 36px;
+  top: 75px;
+  left: 15px;
   z-index: 0;
   width: 346px;
   height: 344px;
@@ -232,7 +229,7 @@
   position: absolute;
   top: 266px;
   right: 0;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
