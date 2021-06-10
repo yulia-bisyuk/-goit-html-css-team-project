@@ -11,7 +11,7 @@
 .footer__title {
     font-family: var(--title-font);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 43px;
     padding-right: 34px;
@@ -61,6 +61,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     color: var(--accent-color);
+    font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,6 +116,9 @@
     &:hover {
         background-color: var(--accent-color);
     }
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -138,9 +142,9 @@
 .footer__social-span {
     font-family: var(--main-font);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.83;
     letter-spacing: 0.02em;
     color: var(--black-color);
 }
@@ -176,7 +180,7 @@
     margin-right: auto;
     font-family: var(--main-font);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
