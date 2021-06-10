@@ -1773,7 +1773,6 @@ ul {
 @media screen and (min-width: 1280px) {
   .contacts {
     padding-bottom: 165px;
-
     background-image: linear-gradient(var(--white-color) 102px, var(--section-bg) 102px),
       url('/images/contacts/desktop/img-bg.png');
   }
