@@ -32,19 +32,19 @@
       background-repeat: no-repeat;
     }
 
-    &__icon1 {
+    &.advantage__icon1 {
       &::before {
         background-image: url('/images/advantages/icon1.png');
       }
     }
 
-    &__icon2 {
+    &.advantage__icon2 {
       &::before {
         background-image: url('/images/advantages/icon2.png');
       }
     }
 
-    &__icon3 {
+    &.advantage__icon3 {
       &::before {
         background-image: url('/images/advantages/icon3.png');
       }
