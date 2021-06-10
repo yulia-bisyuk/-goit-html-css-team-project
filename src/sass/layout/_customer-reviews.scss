@@ -44,11 +44,13 @@
   @media screen and (min-width: 768px) {
     // min-height: 164px;
     width: 620px;
+    margin-bottom: 42px;
     // padding: 40px 80px 34px 80px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 926px;
+    margin-bottom: 34px;
     // padding: 32px 54px 32px 50px;
   }
 
@@ -96,11 +98,15 @@
   @media screen and (min-width: 768px) and (max-width: 1279.9px) {
     max-width: 460px;
     min-height: 93px;
+    font-size: 14px;
+    line-height: 2.16;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 750px;
+    width: 750px;
     min-height: 74px;
+    font-size: 16px;
+    line-height: 1.86;
   }
 }
 
@@ -126,5 +132,15 @@
       background-image: url('/images/slider/dots@2x.png');
       background-size: 32px 4px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 }
