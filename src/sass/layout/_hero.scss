@@ -161,7 +161,7 @@
 }
 
 .hero__buttons--made:hover {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 
 .hero__images {
@@ -267,6 +267,10 @@
   width: 135px;
   margin-left: 30px;
   padding-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 
   @media screen and (min-width: 1280px) {
     width: 200px;
