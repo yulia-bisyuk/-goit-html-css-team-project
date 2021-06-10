@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  top: 0;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -54,7 +55,7 @@
   }
 }
 .header__button:hover {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 .mobile-menu__button.is-open + .header__button {
   display: none;

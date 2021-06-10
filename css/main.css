@@ -282,6 +282,7 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   overflow-y: scroll;
+  height: 100vh;
 }
 
 .is-open .mobile-menu__icon--open {
@@ -303,7 +304,7 @@ ul {
   background-color: transparent;
 }
 
-.mobile-menu__buton.is-open {
+.mobile-menu__button.is-open {
   position: fixed;
 }
 
@@ -378,7 +379,7 @@ ul {
 }
 
 .menu__button:hover {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 
 .menu__button-icon {
@@ -598,7 +599,7 @@ ul {
 }
 
 .header__button:hover {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 
 .mobile-menu__button.is-open + .header__button {
@@ -832,7 +833,7 @@ ul {
 }
 
 .hero__buttons--made:hover {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 
 .hero__images {
@@ -1536,7 +1537,7 @@ ul {
 
 @media screen and (min-width: 1280px) {
   .reviews__text {
-    width: 750px;
+    min-width: 750px;
     min-height: 74px;
     font-size: 16px;
     line-height: 1.86;
@@ -2297,7 +2298,7 @@ ul {
 }
 
 .contacts__button--franchise:hover, .contacts__button--franchise:focus {
-  background-color: var(--buton-second-accent-color);
+  background-color: var(--button-second-accent-color);
 }
 
 @media screen and (min-width: 768px) {
