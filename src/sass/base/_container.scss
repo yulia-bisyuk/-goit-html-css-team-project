@@ -4,31 +4,14 @@
   padding-left: 20px;
   padding-right: 20px;
 
-<<<<<<< Updated upstream
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-    // padding-left: 34px;
-    // padding-right: 34px;
-=======
   @media screen and (min-width: 480px) {
     width: 320px;
   }
   @media screen and (min-width: 768px) {
     width: 740px;
->>>>>>> Stashed changes
   }
   @media screen and (min-width: 1280px) {
-<<<<<<< Updated upstream
-    width: 1280px;
-    max-width: 1600px;
-    // padding-left: 116px;
-    // padding-right: 116px;
-=======
     width: 1090px;
->>>>>>> Stashed changes
+    max-width: 1600px;
   }
 }

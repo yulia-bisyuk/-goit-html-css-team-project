@@ -27,7 +27,7 @@
     width: 249px;
     height: 252px;
 
-    background-image: url(../images/products/mobile/pic1.jpg);
+    background-image: url(/images/products/mobile/pic1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -46,27 +46,27 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/mobile/pic1@2x.jpg);
+      background-image: url(/images/products/mobile/pic1@2x.jpg);
     }
 
     @media (min-width: 480px) {
-      background-image: url(../images/products/tablet/pic1.jpg);
+      background-image: url(/images/products/tablet/pic1.jpg);
     }
 
     @media (min-width: 480px) and (min-device-pixel-ratio: 2),
       (min-width: 480px) and (min-resolution: 192dpi),
       (min-width: 480px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/tablet/pic1@2x.jpg);
+      background-image: url(/images/products/tablet/pic1@2x.jpg);
     }
 
     @media (min-width: 768px) {
-      background-image: url(../images/products/desktop/pic1.jpg);
+      background-image: url(/images/products/desktop/pic1.jpg);
     }
 
     @media (min-width: 768px) and (min-device-pixel-ratio: 2),
       (min-width: 768px) and (min-resolution: 192dpi),
       (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/desktop/pic1@2x.jpg);
+      background-image: url(/images/products/desktop/pic1@2x.jpg);
     }
   }
 }
@@ -86,7 +86,7 @@
     width: 249px;
     height: 252px;
 
-    background-image: url(../images/products/mobile/pic2.jpg);
+    background-image: url(/images/products/mobile/pic2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -105,27 +105,27 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/mobile/pic2@2x.jpg);
+      background-image: url(/images/products/mobile/pic2@2x.jpg);
     }
 
     @media (min-width: 480px) {
-      background-image: url(../images/products/tablet/pic2.jpg);
+      background-image: url(/images/products/tablet/pic2.jpg);
     }
 
     @media (min-width: 480px) and (min-device-pixel-ratio: 2),
       (min-width: 480px) and (min-resolution: 192dpi),
       (min-width: 480px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/tablet/pic2@2x.jpg);
+      background-image: url(/images/products/tablet/pic2@2x.jpg);
     }
 
     @media (min-width: 768px) {
-      background-image: url(../images/products/desktop/pic2.jpg);
+      background-image: url(/images/products/desktop/pic2.jpg);
     }
 
     @media (min-width: 768px) and (min-device-pixel-ratio: 2),
       (min-width: 768px) and (min-resolution: 192dpi),
       (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/desktop/pic2@2x.jpg);
+      background-image: url(/images/products/desktop/pic2@2x.jpg);
     }
   }
 }
@@ -145,7 +145,7 @@
     width: 249px;
     height: 252px;
 
-    background-image: url(../images/products/mobile/pic3.jpg);
+    background-image: url(/images/products/mobile/pic3.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -164,27 +164,27 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/mobile/pic3@2x.jpg);
+      background-image: url(/images/products/mobile/pic3@2x.jpg);
     }
 
     @media (min-width: 480px) {
-      background-image: url(../images/products/tablet/pic3.jpg);
+      background-image: url(/images/products/tablet/pic3.jpg);
     }
 
     @media (min-width: 480px) and (min-device-pixel-ratio: 2),
       (min-width: 480px) and (min-resolution: 192dpi),
       (min-width: 480px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/tablet/pic3@2x.jpg);
+      background-image: url(/images/products/tablet/pic3@2x.jpg);
     }
 
     @media (min-width: 768px) {
-      background-image: url(../images/products/desktop/pic3.jpg);
+      background-image: url(/images/products/desktop/pic3.jpg);
     }
 
     @media (min-width: 768px) and (min-device-pixel-ratio: 2),
       (min-width: 768px) and (min-resolution: 192dpi),
       (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: url(../images/products/desktop/pic3@2x.jpg);
+      background-image: url(/images/products/desktop/pic3@2x.jpg);
     }
   }
 }
@@ -331,7 +331,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
-    background-image: url(../images/products/dots/dots-sec-ver.png);
+    background-image: url(/images/products/dots/dots-sec-ver.png);
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 32px;

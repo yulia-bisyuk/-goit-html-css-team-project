@@ -8,9 +8,12 @@
 @import './utils/variables';
 @import './base/common';
 @import './base/container';
+@import './utils/mixin';
 @import './components/menu';
+@import './components/modal';
 @import './components/heading-secondary-label';
 @import './components/heading-secondary';
+@import './components/button';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
