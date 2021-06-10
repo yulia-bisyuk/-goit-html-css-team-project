@@ -29,22 +29,27 @@
 
 .reviews__content {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   background-color: var(--slider-color);
   padding: 43px 60px 26px 60px;
   margin-bottom: 52px;
-  padding-left: auto;
-  padding-right: auto;
-  max-width: 280px;
-  min-height: 308px;
+  // min-height: 308px;
   z-index: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
 
   @media screen and (min-width: 768px) {
-    max-width: 620px;
-    min-height: 164px;
+    // min-height: 164px;
+    width: 620px;
+    // padding: 40px 80px 34px 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    // padding: 32px 54px 32px 50px;
   }
 
   &::before {
@@ -73,9 +78,7 @@
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
-
-  // max-width: 157px;
-  // min-height: 248px;
+  max-width: 157px;
   z-index: 20;
   background-image: repeating-linear-gradient(
     to bottom,
@@ -86,15 +89,19 @@
   );
   background-repeat: no-repeat;
 
-  // @media screen and (min-width: 768px) {
-  //   max-width: 460px;
-  //   min-height: 83px;
-  // }
+  @media screen and (max-width: 767.9px) {
+    min-height: 200px;
+  }
 
-  // @media screen and (min-width: 1280px) {
-  //   max-width: 460px;
-  //   min-height: 83px;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
+    max-width: 460px;
+    min-height: 93px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 750px;
+    min-height: 74px;
+  }
 }
 
 .reviews__name {
@@ -115,8 +122,9 @@
     height: 4px;
     background-image: url('/images/slider/dots@1x.png');
 
-    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //   background-image: url('/images/slider/dots@2x.png');
-    // }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/slider/dots@2x.png');
+      background-size: 32px 4px;
+    }
   }
 }

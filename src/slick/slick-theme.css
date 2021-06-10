@@ -179,7 +179,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  background-image: url(../images/slider/home.png);
+  background-image: url(../images/slider/house.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 12.4px;
