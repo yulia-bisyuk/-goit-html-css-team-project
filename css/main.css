@@ -2040,7 +2040,7 @@ ul {
 @media screen and (min-width: 768px) {
   .contacts__list-item {
     margin-bottom: 0px;
-    width: calc((100% - 20px * 3) / 3);
+    width: calc((100% - 18px * 3) / 3);
     height: 544px;
     padding: 50px 30px;
   }
@@ -2060,7 +2060,7 @@ ul {
   line-height: 1.83;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 3px 24px;
+  padding: 3px 22px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
