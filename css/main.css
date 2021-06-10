@@ -62,7 +62,8 @@
   --light-brown-color: #907e82;
   --separate-line-color: #e1e1e1;
   --shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --gallery-animation: 750ms cubic-bezier(0.23, 0.98, 0.46, 0.33);
 }
 
 html {
@@ -1429,8 +1430,84 @@ ul {
 }
 
 .gallery {
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--section-bg)), color-stop(40%, var(--white-color)), color-stop(60%, var(--white-color)));
   background-image: linear-gradient(to bottom, var(--section-bg) 40%, var(--white-color) 40%, var(--white-color) 60%);
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+.grid-item {
+  width: 135px;
+  height: 135px;
+  float: left;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 1;
+  -webkit-transition: position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+  transition: position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+  transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation);
+  transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+}
+
+.grid-item:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 2;
+}
+
+.grid__img {
+  display: block;
+  border-radius: 20px;
+}
+
+.grid-item--main {
+  width: 282px;
+  height: 282px;
+}
+
+/* ---- stamp ---- */
+/* position stamp elements with CSS */
+.stamp {
+  position: absolute;
+  background: orange;
+  border: 4px dotted black;
+}
+
+.stamp1 {
+  left: 30%;
+  top: 10px;
+  width: 20%;
+  height: 180px;
+}
+
+.stamp2 {
+  right: 10%;
+  top: 30px;
+  width: 70%;
+  height: 60px;
 }
 
 .reviews {

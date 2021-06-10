@@ -1,8 +1,96 @@
 .gallery {
+  position: relative;
   background-image: linear-gradient(
     to bottom,
     var(--section-bg) 40%,
     var(--white-color) 40%,
     var(--white-color) 60%
   );
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 135px;
+  height: 135px;
+  float: left;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transform: scale(1);
+  z-index: 1;
+  transition: transform var(--gallery-animation), position var(--gallery-animation),
+    z-index var(--gallery-animation);
+
+  &:hover {
+    transform: scale(1.5);
+    z-index: 2;
+  }
+}
+
+.grid__img {
+  display: block;
+  border-radius: 20px;
+}
+
+.grid-item--main {
+  width: 282px;
+  height: 282px;
+}
+
+// .grid-item--width2 {
+//   width: 320px;
+// }
+// .grid-item--width3 {
+//   width: 480px;
+// }
+// .grid-item--width4 {
+//   width: 720px;
+// }
+
+// .grid-item--height2 {
+//   height: 200px;
+// }
+// .grid-item--height3 {
+//   height: 260px;
+// }
+// .grid-item--height4 {
+//   height: 360px;
+// }
+
+/* ---- stamp ---- */
+
+/* position stamp elements with CSS */
+.stamp {
+  position: absolute;
+  background: orange;
+  border: 4px dotted black;
+}
+.stamp1 {
+  left: 30%;
+  top: 10px;
+  width: 20%;
+  height: 180px;
+}
+.stamp2 {
+  right: 10%;
+  top: 30px;
+  width: 70%;
+  height: 60px;
 }
