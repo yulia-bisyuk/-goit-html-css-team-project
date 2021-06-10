@@ -1875,15 +1875,15 @@ ul {
   background-repeat: no-repeat;
 }
 
-.advantage__subtitle__icon1::before {
+.advantage__subtitle.advantage__icon1::before {
   background-image: url("/images/advantages/icon1.png");
 }
 
-.advantage__subtitle__icon2::before {
+.advantage__subtitle.advantage__icon2::before {
   background-image: url("/images/advantages/icon2.png");
 }
 
-.advantage__subtitle__icon3::before {
+.advantage__subtitle.advantage__icon3::before {
   background-image: url("/images/advantages/icon3.png");
 }
 
