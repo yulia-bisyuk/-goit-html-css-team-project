@@ -205,7 +205,7 @@
 .hero__images--icecream {
   position: absolute;
   top: 92px;
-  left: 100px;
+  left: 90px;
   width: 171px;
   height: 410px;
   z-index: 2;
@@ -267,10 +267,6 @@
   width: 135px;
   margin-left: 30px;
   padding-top: 30px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
-  }
 
   @media screen and (min-width: 1280px) {
     width: 200px;

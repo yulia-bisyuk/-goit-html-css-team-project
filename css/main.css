@@ -183,7 +183,6 @@ ul {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1090px;
-    max-width: 1600px;
   }
 }
 
@@ -306,6 +305,9 @@ ul {
 
 .mobile-menu__button.is-open {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mobile-menu__icon {
@@ -384,8 +386,8 @@ ul {
 
 .menu__button-icon {
   margin-left: 16px;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .menu__list::before {
@@ -525,6 +527,7 @@ ul {
 
 .header {
   position: absolute;
+  top: 0;
   width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -885,7 +888,7 @@ ul {
 .hero__images--icecream {
   position: absolute;
   top: 92px;
-  left: 100px;
+  left: 90px;
   width: 171px;
   height: 410px;
   z-index: 2;
@@ -1244,6 +1247,7 @@ ul {
   font-family: var(--title-font);
   font-size: 34px;
   line-height: 1.14;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -1341,6 +1345,7 @@ ul {
   font-family: var(--title-font);
   font-size: 20px;
   line-height: 1.15;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
