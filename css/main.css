@@ -969,7 +969,7 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__about-img {
+  .header__about--img {
     width: 188px;
     height: 191px;
   }
@@ -1609,6 +1609,13 @@ ul {
   z-index: 2;
 }
 
+@media screen and (max-width: 479.9px) {
+  .grid-main {
+    max-width: 71px;
+    max-height: 71px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .grid-main {
     width: 106px;
@@ -1776,6 +1783,7 @@ ul {
   width: 32px;
   height: 4px;
   background-image: url("/images/slider/dots@1x.png");
+  background-size: 32px 4px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
