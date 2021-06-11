@@ -29,7 +29,7 @@
 }
 
 .about {
-  &__suptitle {
+  &__subtitle {
     &::selection {
       color: var(--white-color);
       background-color: var(--hero-header-bg);
@@ -94,6 +94,11 @@
   &::selection {
     color: var(--white-color);
     background-color: var(--hero-header-bg);
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   @include font(12px, 500, 1.62, 0.03em);

@@ -1835,7 +1835,7 @@ ul {
   }
 }
 
-.about__suptitle {
+.about__subtitle {
   font-family: var(--title-font);
   font-size: 18px;
   font-weight: 400;
@@ -1847,18 +1847,18 @@ ul {
   margin-bottom: 16px;
 }
 
-.about__suptitle::-moz-selection {
+.about__subtitle::-moz-selection {
   color: var(--white-color);
   background-color: var(--hero-header-bg);
 }
 
-.about__suptitle::selection {
+.about__subtitle::selection {
   color: var(--white-color);
   background-color: var(--hero-header-bg);
 }
 
 @media screen and (min-width: 768px) {
-  .about__suptitle {
+  .about__subtitle {
     font-size: 26px;
     font-weight: 400;
     line-height: 1.15;
@@ -1867,7 +1867,7 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
-  .about__suptitle {
+  .about__subtitle {
     font-size: 30px;
     font-weight: 400;
     line-height: 1.13;
@@ -1956,11 +1956,22 @@ ul {
 .about__text::-moz-selection {
   color: var(--white-color);
   background-color: var(--hero-header-bg);
+  font-size: 12px;
 }
 
 .about__text::selection {
   color: var(--white-color);
   background-color: var(--hero-header-bg);
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text::-moz-selection {
+    font-size: 14px;
+  }
+  .about__text::selection {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
