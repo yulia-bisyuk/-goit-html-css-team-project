@@ -1776,6 +1776,7 @@ ul {
   width: 32px;
   height: 4px;
   background-image: url("/images/slider/dots@1x.png");
+  background-size: 32px 4px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
