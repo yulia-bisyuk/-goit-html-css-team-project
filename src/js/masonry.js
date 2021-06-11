@@ -1,5 +1,5 @@
 $('.grid').masonry({
-  itemSelector: '.grid-item',
+  itemSelector: '.grid__item',
   columnWidth: 140,
   transitionDuration: '0.8s'
 });
