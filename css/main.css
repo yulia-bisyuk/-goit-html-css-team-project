@@ -1443,9 +1443,27 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  max-width: 1280px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .grid {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid {
+    max-width: 1280px;
+  }
 }
 
 /* clearfix */
@@ -1480,7 +1498,6 @@ ul {
 
 .grid__img {
   display: block;
-  border-radius: 20px;
 }
 
 .grid-item--main {
