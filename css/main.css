@@ -1468,14 +1468,12 @@ ul {
   }
 }
 
-/* clearfix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* ---- grid-item ---- */
 .grid__item {
   width: 35px;
   height: 35px;
@@ -1520,54 +1518,54 @@ ul {
   z-index: 2;
 }
 
-.group {
+.grid__group {
   margin: 0;
 }
 
-.group-two {
+.grid__group-two {
   padding-top: 6px;
 }
 
 @media screen and (min-width: 768px) {
-  .group-two {
+  .grid__group-two {
     padding-top: 12px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .group-two {
+  .grid__group-two {
     padding-top: 25px;
   }
 }
 
-.group-four {
+.grid__group-four {
   padding-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .group-four {
+  .grid__group-four {
     padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .group-four {
+  .grid__group-four {
     padding-top: 60px;
   }
 }
 
-.group-five {
+.grid__group-five {
   padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .group-five {
+  .grid__group-five {
     padding-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .group-five {
+  .grid__group-five {
     padding-bottom: 40px;
   }
 }
@@ -1590,7 +1588,7 @@ ul {
   }
 }
 
-.grid-main {
+.grid__main {
   width: 71x;
   height: 71px;
   -webkit-transform: scale(1);
@@ -1602,7 +1600,7 @@ ul {
   transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
 }
 
-.grid-main:hover {
+.grid__main:hover {
   position: relative;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -1610,28 +1608,28 @@ ul {
 }
 
 @media screen and (max-width: 479.9px) {
-  .grid-main {
+  .grid__main {
     max-width: 71px;
     max-height: 71px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .grid-main {
+  .grid__main {
     width: 106px;
     height: 106px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .grid-main {
+  .grid__main {
     width: 174px;
     height: 174px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .grid-main {
+  .grid__main {
     width: 284px;
     height: 284px;
   }

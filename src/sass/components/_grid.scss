@@ -1,0 +1,149 @@
+.grid {
+  width: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1010;
+  }
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid__item {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  transform: scale(1);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  z-index: 1;
+  transition: transform var(--gallery-animation), position var(--gallery-animation),
+    z-index var(--gallery-animation);
+
+  @media screen and (min-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border: 2px solid transparent;
+
+    width: 81px;
+    height: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 139px;
+    height: 139px;
+  }
+
+  &:hover {
+    position: relative;
+    transform: scale(1.5);
+    z-index: 2;
+  }
+}
+
+.grid__group {
+  margin: 0;
+}
+
+.grid__group-two {
+  padding-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 25px;
+  }
+}
+
+.grid__group-four {
+  padding-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
+
+.grid__group-five {
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 40px;
+  }
+}
+
+.grid__img {
+  display: block;
+  margin: 0;
+  border-radius: 7px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    border-radius: 20px;
+  }
+}
+
+.grid__main {
+  width: 71x;
+  height: 71px;
+  transform: scale(1);
+  z-index: 1;
+  transition: transform var(--gallery-animation), position var(--gallery-animation),
+    z-index var(--gallery-animation);
+  &:hover {
+    position: relative;
+    transform: scale(1.5);
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 479.9px) {
+    max-width: 71px;
+    max-height: 71px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 106px;
+    height: 106px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    height: 174px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 284px;
+    height: 284px;
+  }
+}
