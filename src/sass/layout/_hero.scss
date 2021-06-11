@@ -130,6 +130,7 @@
   background-color: var(--accent-color);
   border-radius: 20px;
   cursor: pointer;
+
   z-index: 3;
   transition: background-color 250ms var(--timing-function);
 
@@ -138,6 +139,16 @@
     height: 40px;
     margin-right: 15px;
   }
+}
+
+.hero__link {
+  text-decoration: none;
+  display: block;
+  color: var(--white-color);
+}
+
+.hero__link--made {
+  color: var(--accent-color);
 }
 
 .hero__buttons--products:hover {
@@ -205,7 +216,7 @@
 .hero__images--icecream {
   position: absolute;
   top: 92px;
-  left: 100px;
+  left: 90px;
   width: 171px;
   height: 410px;
   z-index: 2;
@@ -267,10 +278,6 @@
   width: 135px;
   margin-left: 30px;
   padding-top: 30px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
-  }
 
   @media screen and (min-width: 1280px) {
     width: 200px;
