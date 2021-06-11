@@ -1436,7 +1436,7 @@ ul {
 }
 
 .grid {
-  width: 100%;
+  width: 288px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1452,7 +1452,7 @@ ul {
 
 @media screen and (min-width: 480px) {
   .grid {
-    width: 288px;
+    width: 400px;
   }
 }
 
