@@ -196,3 +196,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .slick-dots li.slick-active button:before {
+    background-image: url(../images/slider/house@2x.png);
+    background-size: 15px 14px;
+  }
+}
