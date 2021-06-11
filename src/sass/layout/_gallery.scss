@@ -9,23 +9,23 @@
 }
 
 .grid {
+  width: 288px;
   display: flex;
   align-items: center;
-  position: relative;
-  max-width: 320px;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 400px;
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 620px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    width: 1010;
   }
 }
 
@@ -39,70 +39,119 @@
 /* ---- grid-item ---- */
 
 .grid-item {
-  width: 135px;
-  height: 135px;
-  float: left;
+  width: 35px;
+  height: 35px;
   background: transparent;
-  border: 2px solid transparent;
-  border-radius: 5px;
   transform: scale(1);
+  border: 1px solid transparent;
+  border-radius: 5px;
   z-index: 1;
   transition: transform var(--gallery-animation), position var(--gallery-animation),
     z-index var(--gallery-animation);
 
+  @media screen and (min-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border: 2px solid transparent;
+
+    width: 81px;
+    height: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 139px;
+    height: 139px;
+  }
+
   &:hover {
+    position: relative;
     transform: scale(1.5);
     z-index: 2;
   }
 }
 
+.group {
+  margin: 0;
+}
+
+.group-two {
+  padding-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 25px;
+  }
+}
+
+.group-four {
+  padding-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
+
+.group-five {
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 40px;
+  }
+}
+
 .grid__img {
   display: block;
-  // border-radius: 20px;
+  margin: 0;
+  border-radius: 7px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    border-radius: 20px;
+  }
 }
 
-.grid-item--main {
-  width: 282px;
-  height: 282px;
-}
+.grid-main {
+  width: 71x;
+  height: 71px;
+  transform: scale(1);
+  z-index: 1;
+  transition: transform var(--gallery-animation), position var(--gallery-animation),
+    z-index var(--gallery-animation);
+  &:hover {
+    position: relative;
+    transform: scale(1.5);
+    z-index: 2;
+  }
 
-// .grid-item--width2 {
-//   width: 320px;
-// }
-// .grid-item--width3 {
-//   width: 480px;
-// }
-// .grid-item--width4 {
-//   width: 720px;
-// }
+  @media screen and (min-width: 480px) {
+    width: 106px;
+    height: 106px;
+  }
 
-// .grid-item--height2 {
-//   height: 200px;
-// }
-// .grid-item--height3 {
-//   height: 260px;
-// }
-// .grid-item--height4 {
-//   height: 360px;
-// }
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    height: 174px;
+  }
 
-/* ---- stamp ---- */
-
-/* position stamp elements with CSS */
-.stamp {
-  position: absolute;
-  background: orange;
-  border: 4px dotted black;
-}
-.stamp1 {
-  left: 30%;
-  top: 10px;
-  width: 20%;
-  height: 180px;
-}
-.stamp2 {
-  right: 10%;
-  top: 30px;
-  width: 70%;
-  height: 60px;
+  @media screen and (min-width: 1280px) {
+    width: 284px;
+    height: 284px;
+  }
 }

@@ -1436,33 +1436,35 @@ ul {
 }
 
 .grid {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  max-width: 320px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .grid {
-    max-width: 480px;
+    width: 288px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .grid {
-    max-width: 768px;
+    width: 620px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .grid {
-    max-width: 1280px;
+    width: 1010;
   }
 }
 
@@ -1475,12 +1477,122 @@ ul {
 
 /* ---- grid-item ---- */
 .grid-item {
-  width: 135px;
-  height: 135px;
-  float: left;
+  width: 35px;
+  height: 35px;
   background: transparent;
-  border: 2px solid transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 1px solid transparent;
   border-radius: 5px;
+  z-index: 1;
+  -webkit-transition: position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+  transition: position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+  transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation);
+  transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
+}
+
+@media screen and (min-width: 480px) {
+  .grid-item {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-item {
+    border: 2px solid transparent;
+    width: 81px;
+    height: 81px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid-item {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+.grid-item:hover {
+  position: relative;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 2;
+}
+
+.group {
+  margin: 0;
+}
+
+.group-two {
+  padding-top: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .group-two {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .group-two {
+    padding-top: 25px;
+  }
+}
+
+.group-four {
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .group-four {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .group-four {
+    padding-top: 60px;
+  }
+}
+
+.group-five {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .group-five {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .group-five {
+    padding-bottom: 40px;
+  }
+}
+
+.grid__img {
+  display: block;
+  margin: 0;
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__img {
+    border-radius: 11px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid__img {
+    border-radius: 20px;
+  }
+}
+
+.grid-main {
+  width: 71x;
+  height: 71px;
   -webkit-transform: scale(1);
           transform: scale(1);
   z-index: 1;
@@ -1490,41 +1602,32 @@ ul {
   transition: transform var(--gallery-animation), position var(--gallery-animation), z-index var(--gallery-animation), -webkit-transform var(--gallery-animation);
 }
 
-.grid-item:hover {
+.grid-main:hover {
+  position: relative;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   z-index: 2;
 }
 
-.grid__img {
-  display: block;
+@media screen and (min-width: 480px) {
+  .grid-main {
+    width: 106px;
+    height: 106px;
+  }
 }
 
-.grid-item--main {
-  width: 282px;
-  height: 282px;
+@media screen and (min-width: 768px) {
+  .grid-main {
+    width: 174px;
+    height: 174px;
+  }
 }
 
-/* ---- stamp ---- */
-/* position stamp elements with CSS */
-.stamp {
-  position: absolute;
-  background: orange;
-  border: 4px dotted black;
-}
-
-.stamp1 {
-  left: 30%;
-  top: 10px;
-  width: 20%;
-  height: 180px;
-}
-
-.stamp2 {
-  right: 10%;
-  top: 30px;
-  width: 70%;
-  height: 60px;
+@media screen and (min-width: 1280px) {
+  .grid-main {
+    width: 284px;
+    height: 284px;
+  }
 }
 
 .reviews {
