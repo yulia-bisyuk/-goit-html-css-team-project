@@ -1609,6 +1609,13 @@ ul {
   z-index: 2;
 }
 
+@media screen and (max-width: 479.9px) {
+  .grid-main {
+    max-width: 71px;
+    max-height: 71px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .grid-main {
     width: 106px;
