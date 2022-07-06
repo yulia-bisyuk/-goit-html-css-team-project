@@ -6,11 +6,11 @@
   "homepage": "https://yulia-bisyuk.github.io/-goit-html-css-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-html-css-team-project/"
+    "build": "parcel build src/*.html --public-url /-goit-html-css-team-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yulia-bisyuk/goit-html-css-team-project.git"
+    "url": "git+https://github.com/yulia-bisyuk/-goit-html-css-team-project.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
